@@ -6,7 +6,7 @@
 /*   By: rvan-aud <rvan-aud@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 13:50:56 by rvan-aud          #+#    #+#             */
-/*   Updated: 2021/12/03 16:12:31 by rvan-aud         ###   ########.fr       */
+/*   Updated: 2021/12/08 16:17:30 by rvan-aud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ int	main(void)
 		club.setType("some other type of club");
 		bob.attack();
 	}
+	std::cout << std::endl;
 	{
 		Weapon	club = Weapon("crude spiked club");
 		

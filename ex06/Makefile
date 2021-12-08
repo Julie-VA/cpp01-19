@@ -5,14 +5,15 @@
 #                                                     +:+ +:+         +:+      #
 #    By: rvan-aud <rvan-aud@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/12/03 16:13:58 by rvan-aud          #+#    #+#              #
-#    Updated: 2021/12/08 14:57:01 by rvan-aud         ###   ########.fr        #
+#    Created: 2021/12/06 17:52:41 by rvan-aud          #+#    #+#              #
+#    Updated: 2021/12/08 14:56:44 by rvan-aud         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS		=	main.cpp	\
+				Karen.cpp	\
 
-NAME		= replace
+NAME		= karenFilter
 
 CXX			= clang++
 

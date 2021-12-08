@@ -6,7 +6,7 @@
 /*   By: rvan-aud <rvan-aud@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 17:52:57 by rvan-aud          #+#    #+#             */
-/*   Updated: 2021/12/08 16:20:28 by rvan-aud         ###   ########.fr       */
+/*   Updated: 2021/12/08 16:11:04 by rvan-aud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,35 @@ Karen::~Karen(void)
 
 void	Karen::complain(std::string level)
 {
-	void		(Karen::*ptr[4])(void) = {&Karen::_debug, &Karen::_info, &Karen::_warning, &Karen::_error};
 	std::string cmp[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+	int			i_lvl = -1;
+	int 		i;
 
-	for (int i = 0; i < 4; i++)
+	for (i = 0; i < 4; i++)
 	{
 		if (level == cmp[i])
-			(this->*ptr[i])();
+			i_lvl = i;
+	}
+	switch (i_lvl)
+	{
+		case (0):
+			std::cout << "[ DEBUG ]" << std::endl;
+			this->_debug();
+			std::cout << std::endl;
+		case (1):
+			std::cout << "[ INFO ]" << std::endl;
+			this->_info();
+			std::cout << std::endl;
+		case (2):
+			std::cout << "[ WARNING ]" << std::endl;
+			this->_warning();
+			std::cout << std::endl;
+		case (3):
+			std::cout << "[ ERROR ]" << std::endl;
+			this->_error();
+			break;
+		default:
+			std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
 	}
 }
 

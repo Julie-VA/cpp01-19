@@ -1,20 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   randomChump.cpp                                    :+:      :+:    :+:   */
+/*   Karen.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rvan-aud <rvan-aud@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/03 11:36:04 by rvan-aud          #+#    #+#             */
-/*   Updated: 2021/12/08 16:13:06 by rvan-aud         ###   ########.fr       */
+/*   Created: 2021/12/06 17:52:54 by rvan-aud          #+#    #+#             */
+/*   Updated: 2021/12/08 16:11:55 by rvan-aud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include <iostream>
 
-void	randomChump(std::string name)
+class	Karen
 {
-	Zombie zombie(name);
+	public:
 
-	zombie.announce();
-}
+		Karen(void);
+		~Karen(void);
+
+		void	complain(std::string level);
+
+	private:
+
+		void	_debug(void);
+		void	_info(void);
+		void	_warning(void);
+		void	_error(void);
+};

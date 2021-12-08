@@ -6,7 +6,7 @@
 /*   By: rvan-aud <rvan-aud@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 16:14:05 by rvan-aud          #+#    #+#             */
-/*   Updated: 2021/12/06 17:42:20 by rvan-aud         ###   ########.fr       */
+/*   Updated: 2021/12/08 16:19:53 by rvan-aud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,10 +58,8 @@ int	replace(std::string filename, std::string s1, std::string s2)
 				while (pos != std::string::npos)
 				{
 					offset = pos;
-					std::cout << pos << std::endl;
 					buff.erase(pos, s1.length());
 					buff.insert(pos, s2);
-					std::cout << buff << std::endl;
 					pos = buff.find(s1, offset + 1);
 				}
 				ofs << buff;
