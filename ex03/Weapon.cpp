@@ -6,7 +6,7 @@
 /*   By: rvan-aud <rvan-aud@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 13:35:55 by rvan-aud          #+#    #+#             */
-/*   Updated: 2021/12/03 16:04:54 by rvan-aud         ###   ########.fr       */
+/*   Updated: 2021/12/08 18:34:08 by rvan-aud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ Weapon::~Weapon(void)
 {
 }
 
-std::string	Weapon::getType(void) const
+std::string	const &Weapon::getType(void) const
 {
 	return (this->_type);
 }

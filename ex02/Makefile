@@ -6,11 +6,11 @@
 #    By: rvan-aud <rvan-aud@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/03 12:05:21 by rvan-aud          #+#    #+#              #
-#    Updated: 2021/12/03 15:28:20 by rvan-aud         ###   ########.fr        #
+#    Updated: 2021/12/08 18:31:32 by rvan-aud         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS		=	main.cpp	\
+SRCS		= main.cpp	\
 
 NAME		= ex02
 
